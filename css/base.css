@@ -57,3 +57,240 @@ mark { background: #ff0; }
 
 .col-main {  float:left; width:100%;}
 .col-sub, .col-extra { float:left;}
+
+/** 
+ * markdown from github 
+ */
+.markdown-body {
+font-size:14px;
+line-height:1.6;
+}
+
+.markdown-body h1 {
+padding-bottom:2px;
+font-size:24px;
+border-bottom:1px solid #eee;
+margin:15px 0;
+}
+
+.markdown-body h2 {
+font-size:18px;
+margin:20px 0 10px;
+}
+
+.markdown-body h3 {
+padding-bottom:2px;
+font-size:14px;
+border-bottom:1px solid #ddd;
+margin:20px 0 10px;
+}
+
+.markdown-body h4 {
+font-size:14px;
+line-height:26px;
+font-weight:700;
+text-transform:uppercase;
+padding:18px 0 4px;
+}
+
+.markdown-body h5 {
+font-size:13px;
+line-height:26px;
+font-weight:700;
+text-transform:uppercase;
+padding:14px 0 0;
+}
+
+.markdown-body h6 {
+color:#666;
+font-size:14px;
+line-height:26px;
+font-weight:400;
+font-variant:italic;
+padding:18px 0 0;
+}
+
+.markdown-body hr {
+background:transparent url('../../images/modules/pulls/dirty-shade.png') repeat-x 0 0;
+border:0 none;
+color:#ccc;
+height:4px;
+margin:20px 0;
+padding:0;
+}
+
+.markdown-body ul,.markdown-body ol {
+margin:15px 0 15px 25px;
+}
+
+.markdown-body ul li,.markdown-body ol li {
+margin-top:7px;
+margin-bottom:7px;
+}
+
+.markdown-body>ul,.markdown-body>.document>ul,.markdown-body>ol,.markdown-body>.document>ol {
+margin-top:21px;
+margin-left:36px;
+}
+
+.markdown-body dl {
+margin:0;
+padding:20px 0 0;
+}
+
+.markdown-body dl dt {
+font-size:14px;
+font-weight:700;
+line-height:normal;
+margin:0;
+padding:20px 0 0;
+}
+
+.markdown-body dl dd {
+font-size:13px;
+margin:0;
+padding:3px 0 0;
+}
+
+.markdown-body blockquote {
+border-left:4px solid #ddd;
+padding-left:11px;
+color:#555;
+margin:14px 0;
+}
+
+.markdown-body table {
+border-collapse:collapse;
+margin:20px 0 0;
+padding:0;
+}
+
+.markdown-body table tr {
+border-top:1px solid #ccc;
+background-color:#fff;
+margin:0;
+padding:0;
+}
+
+.markdown-body table tr:nth-child(2n) {
+background-color:#f8f8f8;
+}
+
+.markdown-body table tr th,.markdown-body table tr td {
+border:1px solid #ccc;
+text-align:left;
+margin:0;
+padding:6px 13px;
+}
+
+.markdown-body span.frame {
+display:block;
+overflow:hidden;
+}
+
+.markdown-body span.frame>span {
+border:1px solid #ddd;
+display:block;
+float:left;
+overflow:hidden;
+width:auto;
+margin:13px 0 0;
+padding:7px;
+}
+
+.markdown-body span.frame span img {
+display:block;
+float:left;
+}
+
+.markdown-body span.frame span span {
+clear:both;
+color:#333;
+display:block;
+padding:5px 0 0;
+}
+
+.markdown-body span.align-center>span {
+display:block;
+overflow:hidden;
+text-align:center;
+margin:13px auto 0;
+}
+
+.markdown-body span.align-center span img {
+text-align:center;
+margin:0 auto;
+}
+
+.markdown-body span.align-right>span {
+display:block;
+overflow:hidden;
+text-align:right;
+margin:13px 0 0;
+}
+
+.markdown-body span.align-right span img {
+text-align:right;
+margin:0;
+}
+
+.markdown-body span.float-left {
+display:block;
+margin-right:13px;
+overflow:hidden;
+float:left;
+}
+
+.markdown-body span.float-left span {
+margin:13px 0 0;
+}
+
+.markdown-body span.float-right {
+display:block;
+margin-left:13px;
+overflow:hidden;
+float:right;
+}
+
+.markdown-body span.float-right>span {
+display:block;
+overflow:hidden;
+text-align:right;
+margin:13px auto 0;
+}
+
+.markdown-body code,.markdown-body tt {
+white-space:nowrap;
+border:1px solid #ccc;
+background-color:#f8f8f8;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+margin:0 2px;
+padding:2px 5px;
+}
+
+.markdown-body pre>code {
+white-space:pre;
+border:none;
+background:transparent;
+margin:0;
+padding:0;
+}
+
+.markdown-body .highlight pre,.markdown-body pre {
+background-color:#f8f8f8;
+border:1px solid #ccc;
+font-size:13px;
+line-height:19px;
+overflow:auto;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+padding:6px 10px;
+}
+
+.markdown-body pre code,.markdown-body pre tt {
+background-color:transparent;
+border:none;
+}
