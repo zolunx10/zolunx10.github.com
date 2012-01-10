@@ -27,33 +27,46 @@ tags: [github, blog]
 
 
 ## post
-_posts/ 下文件(似乎需要是.html .md .textile...)会被读入 site.posts , 但其子目录中的不会[1](#post_folder). 文件名及分割参见 <https://github.com/mojombo/jekyll/wiki/permalinks> .
+_posts/ 下满足
+
+1. 文件名是 YEAR-MONTH-DAY-title.MARKUP 形式
+
+2. 后缀[markup]是 .html .md .markdown .textitle 之一(不确定是否还有其他)
+
+的文件会被读入 site.posts , 但其子目录中的不会[[1]](#post_category). 文件名及url分割参见 <https://github.com/mojombo/jekyll/wiki/permalinks> .
 
 
 ## fallback
-- <a name="post_folder">如何在url使用category</a>  
-可以直接使用文件夹[这里的post.categories部分](ttps://github.com/mojombo/jekyll/wiki/Template-Data), 或者在页面头Matter中用 category 指定
+- <a name="post_category">如何在url使用category</a>  
+可以直接使用文件夹[这里的post.categories部分](ttps://github.com/mojombo/jekyll/wiki/Template-Data), 或者在页面头Matter中用 category 指定.
 
-- 文件头的 YAML matter **必须**是3个-
+- 文件头的 Matter **必须**是用**3**个 - 括起.
 
 
 ## TODO
-- 我仍未知道要在post里显示jekyll代码的话({ %)的话要怎么写OTL
+
+- 我仍未知道在post里显示jekyll代码的话({ %)的话要怎么写OTL
 - 搜索
 - tag
+- 模板优化和SEO(你确定这东西有必要么OTL)
 
 
 ## reference
-- 一个完整的站点示例(包括"搜索") 
+
+- 一种"搜索"的实现
 <http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/>
 
 - By formatting your blog posts in either Markdown, Textile or HTML, you could use [Liquid](http://www.liquidmarkup.org/) to format your pages.
 
-- markdown css 直接剥取github的 .mardown-body 部分
+- markdown css 直接自剥取github的 .mardown-body 
+
+- 可用变量
+<https://github.com/mojombo/jekyll/wiki/Template-Data>
 
 - Liquid for Designers
 <https://github.com/Shopify/liquid/wiki/Liquid-for-Designers>
 
+----
 
-## 顺便关于 co.de
-- 如果要重新设定一个域名, 只能先删除(然后会被 lock 2 weeks), 请耐心等待╮(╯▽╰)╭
+## 顺便顺便关于co.de
+如果要重新设定一个域名, 只能先删除(然后会被 lock 2 weeks), 请耐心等待╮(╯▽╰)╭
