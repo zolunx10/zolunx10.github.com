@@ -22,6 +22,9 @@ article {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
+#posts li h2 {
+  display:inline;
+}
 .post {
   margin-bottom:10px;
   padding-bottom:20px;
