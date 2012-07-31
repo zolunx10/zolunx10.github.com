@@ -23,7 +23,7 @@ tags: [github, blog]
 
 	layout: [layout filename]
 
-模板允许嵌套, 至于具体的内容读取之类参考mojombo的 index和_layout中liquid代码部分.
+模板允许嵌套, 至于具体的内容读取之类参考mojombo的 index和_layout中liquid代码部分. 
 
 
 ## post
@@ -39,8 +39,8 @@ _posts/ 下满足
 ## fallback
 - <a name="post_category">如何在url使用category</a>  
 可以直接使用文件夹[这里的post.categories部分](ttps://github.com/mojombo/jekyll/wiki/Template-Data), 或者在页面头Matter中用 category 指定.
-
-- 文件头的 Matter **必须**是用**3**个 - 括起.
+- 文件头的 Matter **必须**是用**3**个 - 括起. 
+- 分页<https://github.com/mojombo/jekyll/wiki/Pagination>
 
 
 ## TODO
@@ -53,16 +53,12 @@ _posts/ 下满足
 
 ## reference
 
-- 一种"搜索"的实现
-<http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/>
-
+- 一种"搜索"的实现 
+http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/
 - By formatting your blog posts in either Markdown, Textile or HTML, you could use [Liquid](http://www.liquidmarkup.org/) to format your pages.
-
 - markdown css 直接自剥取github的 .mardown-body 
-
 - 可用变量
 <https://github.com/mojombo/jekyll/wiki/Template-Data>
-
 - Liquid for Designers
 <https://github.com/Shopify/liquid/wiki/Liquid-for-Designers>
 

@@ -30,6 +30,7 @@ a:visited {
 #content {
   float:left;
   width:760px;
+  min-height:550px;
 }
 
 #site-nav {
@@ -41,7 +42,7 @@ a:visited {
 
 #page-nav {
   position:fixed;
-  bottom:25%;
+  bottom:30%;
   left:0;
   width:100%;
   max-width:960px;
