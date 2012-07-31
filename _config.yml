@@ -1,3 +1,4 @@
 name: "Rubric Code"
 desc: X10的代码窝
 permalink: /blog/:categories/:title.html
+paginate: 1

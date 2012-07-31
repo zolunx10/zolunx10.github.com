@@ -68,8 +68,9 @@ line-height:1.6;
 .markdown-body h1 {
 padding-bottom:2px;
 font-size:24px;
+font-weight:bold;
 border-bottom:1px solid #eee;
-margin:15px 0;
+margin:0 0 15px 0;
 }
 
 .markdown-body h2 {
@@ -80,7 +81,7 @@ margin:20px 0 10px;
 .markdown-body h3 {
 padding-bottom:2px;
 font-size:14px;
-border-bottom:1px solid #ddd;
+border-bottom:1px solid #aaa;
 margin:20px 0 10px;
 }
 
@@ -105,14 +106,14 @@ color:#666;
 font-size:14px;
 line-height:26px;
 font-weight:400;
-font-variant:italic;
+font-style:italic;
 padding:18px 0 0;
 }
 
 .markdown-body hr {
 background:transparent url('../../images/modules/pulls/dirty-shade.png') repeat-x 0 0;
 border:0 none;
-color:#ccc;
+color:#666;
 height:4px;
 margin:20px 0;
 padding:0;
@@ -152,9 +153,9 @@ padding:3px 0 0;
 }
 
 .markdown-body blockquote {
-border-left:4px solid #ddd;
+border-left:4px solid #aaa;
 padding-left:11px;
-color:#555;
+color:#888;
 margin:14px 0;
 }
 
@@ -165,8 +166,7 @@ padding:0;
 }
 
 .markdown-body table tr {
-border-top:1px solid #ccc;
-background-color:#fff;
+border-top:1px solid #666;
 margin:0;
 padding:0;
 }
@@ -176,7 +176,7 @@ background-color:#f8f8f8;
 }
 
 .markdown-body table tr th,.markdown-body table tr td {
-border:1px solid #ccc;
+border:1px solid #666;
 text-align:left;
 margin:0;
 padding:6px 13px;
@@ -188,7 +188,7 @@ overflow:hidden;
 }
 
 .markdown-body span.frame>span {
-border:1px solid #ddd;
+border:1px solid #aaa;
 display:block;
 float:left;
 overflow:hidden;
@@ -260,11 +260,9 @@ margin:13px auto 0;
 
 .markdown-body code,.markdown-body tt {
 white-space:nowrap;
-border:1px solid #ccc;
+border:1px solid #666;
 background-color:#f8f8f8;
 border-radius:3px;
--moz-border-radius:3px;
--webkit-border-radius:3px;
 margin:0 2px;
 padding:2px 5px;
 }
@@ -278,18 +276,35 @@ padding:0;
 }
 
 .markdown-body .highlight pre,.markdown-body pre {
-background-color:#f8f8f8;
-border:1px solid #ccc;
+border:1px solid #666;
 font-size:13px;
 line-height:19px;
 overflow:auto;
 border-radius:3px;
--moz-border-radius:3px;
--webkit-border-radius:3px;
 padding:6px 10px;
 }
 
 .markdown-body pre code,.markdown-body pre tt {
 background-color:transparent;
 border:none;
+}
+
+
+body {
+  font-size:14px;
+}
+article {
+  line-height:1.5;
+}
+p, pre {
+  margin-bottom:0.2em;
+}
+.title {
+  font-family:"Microsoft YaHei", Helmet, Freesans, sans-serif;
+}
+.title-en {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+}
+.title a:hover, .title-en a:hover {
+  text-decoration:none;
 }

@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>zolunx10.github.com</title>
+  <link href="http://zolunx10.github.com/"/>
+  <link type="application/atom+xml" rel="self" href="http://zolunx10.github.com/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://zolunx10.github.com/</id>
+  <author>
+    <name>Xing X10</name>
+    <email>zolunx10@hotmail.com</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://zolunx10.github.com{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://zolunx10.github.com{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>zolunx10</name>
+      <uri>http://zolunx10.github.com/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>

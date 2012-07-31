@@ -2,14 +2,18 @@
 layout: default
 title: {{site.name}}
 ---
- <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li> 
-        <time datetime="{{ post.date | xmlschema }}">{{ post.date | date:"%Y-%m-%d" }}</time> &raquo;
-        <h2>
+{% for post in paginator.posts %}
+  <article class="post markdown-body">
+        <h1 class="title">
           <a href="{{ post.url }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        </h1>
+  <div class="entry">
+    <blockquote>
+      {{ post.content }}
+    </blockquote>
+  </div>
+<!--        
+        <time datetime="{{ post.date | xmlschema }}">{{ post.date | date:"%Y-%m-%d" }}</time> &raquo;
+      -->
+  </article>
+{% endfor %}
