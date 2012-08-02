@@ -1,4 +1,5 @@
 name: "Rubric Code"
-desc: X10的代码窝
+desc: "X10的代码窝"
+url: "http://code.x10.im"
 permalink: /blog/:categories/:title.html
-paginate: 1
+paginate: 5
