@@ -62,31 +62,31 @@ mark { background: #ff0; }
  */
 .markdown-body {
 font-size:14px;
-line-height:1.6;
+line-height:1.5;
 }
 
-.markdown-body h1 {
+.markdown-body h1, .post h1 {
 padding-bottom:2px;
-font-size:24px;
+font-size:2.4em;
 font-weight:bold;
-border-bottom:1px solid #eee;
-margin:0 0 15px 0;
+border-bottom:0px solid #eee;
+margin:0 0 0.8em 0;
 }
 
 .markdown-body h2 {
-font-size:18px;
-margin:20px 0 10px;
+font-size:1.9em;
+padding-bottom:2px;
+margin:0.9em 0 8px;
 }
 
 .markdown-body h3 {
 padding-bottom:2px;
-font-size:14px;
-border-bottom:1px solid #aaa;
-margin:20px 0 10px;
+font-size:1.3em;
+margin:20px 0 6px;
 }
 
 .markdown-body h4 {
-font-size:14px;
+font-size:1.1em;
 line-height:26px;
 font-weight:700;
 text-transform:uppercase;
@@ -110,9 +110,14 @@ font-style:italic;
 padding:18px 0 0;
 }
 
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5 {
+  font-family:"Microsoft YaHei", Helmet, Freesans, sans-serif;
+  color:#FFF;
+}
 .markdown-body hr {
 background:transparent url('../../images/modules/pulls/dirty-shade.png') repeat-x 0 0;
 border:0 none;
+border-bottom:2px dashed #777;
 color:#666;
 height:4px;
 margin:20px 0;
@@ -120,7 +125,7 @@ padding:0;
 }
 
 .markdown-body ul,.markdown-body ol {
-margin:15px 0 15px 25px;
+margin:0 0 0.4em 25px;
 }
 
 .markdown-body ul li,.markdown-body ol li {
@@ -129,8 +134,14 @@ margin-bottom:7px;
 }
 
 .markdown-body>ul,.markdown-body>.document>ul,.markdown-body>ol,.markdown-body>.document>ol {
-margin-top:21px;
+margin-top:0px;
 margin-left:36px;
+}
+.markdown-body>ul,.markdown-body>.document>ul {
+list-style:disc outside;
+} 
+.markdown-body>ol,.markdown-body>.document>ol {
+list-style:decimal outside;
 }
 
 .markdown-body dl {
@@ -294,10 +305,10 @@ body {
   font-size:14px;
 }
 article {
-  line-height:1.5;
+  line-height:1.6;
 }
 p, pre {
-  margin-bottom:0.2em;
+  margin-bottom:0.4em;
 }
 .title {
   font-family:"Microsoft YaHei", Helmet, Freesans, sans-serif;
