@@ -117,3 +117,20 @@ a:visited {
 .post .meta a:hover {
   color:#EEE;
 }
+
+.markdown-body code, .markdown-body tt {
+  background-color:transparent;
+  display:block;
+}
+.markdown-body p code {
+  display:inline-block;
+  white-space:nowrap;
+}
+
+.markdown-body .gist {
+  color:#EEE;
+  margin:10px 0;
+}
+.markdown-body .gist .gist-file .gist-data {
+  background-color:transparent;
+}

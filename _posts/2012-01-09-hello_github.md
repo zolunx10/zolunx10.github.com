@@ -19,11 +19,7 @@ tags: [github, blog]
 
 
 ## layout
-建一个 _layout/ , 写html, 完(喂= =. 还有就是每个对应的页面顶端加上Matter
-
-```
-layout: [layout filename]
-```
+建一个_layout/ , 写html, 完(喂= =. 还有就是每个对应的页面顶端加上Matter `layout: [layout filename]`
 
 模板允许嵌套, 至于具体的内容读取之类参考mojombo的 index和_layout中liquid代码部分. 
 

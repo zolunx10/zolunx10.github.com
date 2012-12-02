@@ -9,12 +9,11 @@ tags: [opencv, cmake, mingw]
 
 虽然现在的OpenCV自带了build文件, 不过和本机MinGW版本不合的话会发生很多奇怪的问题, 还是重新编译好了. 装好CMake设好环境变量PATH和OPENCV后: 
 
-```
-mkdir ${OPENCV}/build/mingw
-cd ${OPENCV}/build/mingw
-cmake -G"MSYS Makefiles" ../.. 
-make
-```
+    mkdir ${OPENCV}/build/mingw
+    cd ${OPENCV}/build/mingw
+    cmake -G"MSYS Makefiles" ../.. 
+    make
+
 
 然后使用下面的CMakeLists建立工程即可, 同样记得在cmake时加上标志 `-G"MSYS Makefiles"` .
 <script src="https://gist.github.com/4186692.js?file=CMakeLists.txt"></script>
@@ -28,12 +27,10 @@ require: 安装了vs2012
 2. 将cmake.exe所在路径(比如D:\programming\cmake\bin)加入系统环境变量PATH
 3. [开始]-vs提供的命令提示行工具, 
 
-```
-cd 你的opencv安装路径/build
-mkdir vc11
-cd vc11
-cmake -G"NMake Makefiles" ../..
-nmake
-```
+    cd 你的opencv安装路径/build
+    mkdir vc11
+    cd vc11
+    cmake -G"NMake Makefiles" ../..
+    nmake
 
 4. 完成. 之后参考网络上其他乱七八糟的教程, 所有需要.dll .lib的路径都改到opencv/build/vc11
