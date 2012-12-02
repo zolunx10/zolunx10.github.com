@@ -2,5 +2,7 @@ name: "Rubric Code"
 desc: "X10的代码窝"
 url: "http://code.x10.im"
 permalink: /blog/:categories/:title.html
+lsi: true
+markdown: rdiscount
 pygments: true
-paginate: 6
+paginate: 5

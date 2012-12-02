@@ -28,22 +28,20 @@ tags: [github, blog]
 _posts/ 下满足
 
 1. 文件名是 YEAR-MONTH-DAY-title.MARKUP 形式
-
 2. 后缀[markup]是 .html .md .markdown .textitle 之一(不确定是否还有其他)
 
 的文件会被读入 site.posts , 且子目录中的会自动成为相应category下的文章[[1]](#post_category). 文件名及url分割参见 <https://github.com/mojombo/jekyll/wiki/permalinks> .
 
 
 ## fallback
-
 - <span name="post_category">如何在url使用category</span>  
 可以直接使用文件夹[这里的post.categories部分](ttps://github.com/mojombo/jekyll/wiki/Template-Data), 或者在页面头Matter中用 category 指定.
 - 文件头的 Matter **必须**是用**3**个 - 括起. 
 - 如果有Markdown错误, 将直接不会build而没有错误提示(比如在'''的块里面写#)
+- 并且为了增强健壮性, 建议将markdown引擎改为rdiscount
 - 分页<https://github.com/mojombo/jekyll/wiki/Pagination>
 
 ## TODO
-
 - 我仍未知道在post里显示jekyll代码的话({ %)的话要怎么写OTL
 - 搜索
 - tag
@@ -51,7 +49,6 @@ _posts/ 下满足
 
 
 ## reference
-
 - 一种"搜索"的实现 <http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/>
 - By formatting your blog posts in either Markdown, Textile or HTML, you could use [Liquid](http://www.liquidmarkup.org/) to format your pages.
 - markdown css: 直接自剥取github的 .mardown-body 
