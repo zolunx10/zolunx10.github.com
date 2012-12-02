@@ -9,12 +9,11 @@ tags: [opencv, cmake, mingw]
 
 虽然现在的OpenCV自带了build文件, 不过和本机MinGW版本不合的话会发生很多奇怪的问题, 还是重新编译好了. 装好CMake设好环境变量PATH和OPENCV后: 
 
-```{% highlight sh %}
+```
 mkdir ${OPENCV}/build/mingw
 cd ${OPENCV}/build/mingw
 cmake -G"MSYS Makefiles" ../.. 
 make
-{% endhighlight %}
 ```
 
 然后使用下面的CMakeLists建立工程即可, 同样记得在cmake时加上标志 `-G"MSYS Makefiles"` .

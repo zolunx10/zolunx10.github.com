@@ -39,11 +39,12 @@ _posts/ 下满足
 
 
 ## fallback
-- <a name="post_category">如何在url使用category</a>  
+
+- <span name="post_category">如何在url使用category</span>  
 可以直接使用文件夹[这里的post.categories部分](ttps://github.com/mojombo/jekyll/wiki/Template-Data), 或者在页面头Matter中用 category 指定.
 - 文件头的 Matter **必须**是用**3**个 - 括起. 
+- 如果有Markdown错误, 将直接不会build而没有错误提示(比如在'''的块里面写#)
 - 分页<https://github.com/mojombo/jekyll/wiki/Pagination>
-
 
 ## TODO
 
