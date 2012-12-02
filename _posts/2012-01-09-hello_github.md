@@ -21,7 +21,9 @@ tags: [github, blog]
 ## layout
 建一个 _layout/ , 写html, 完(喂= =. 还有就是每个对应的页面顶端加上Matter
 
-	layout: [layout filename]
+```
+layout: [layout filename]
+```
 
 模板允许嵌套, 至于具体的内容读取之类参考mojombo的 index和_layout中liquid代码部分. 
 
@@ -53,14 +55,11 @@ _posts/ 下满足
 
 ## reference
 
-- 一种"搜索"的实现 
-http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/
+- 一种"搜索"的实现 <http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/>
 - By formatting your blog posts in either Markdown, Textile or HTML, you could use [Liquid](http://www.liquidmarkup.org/) to format your pages.
-- markdown css 直接自剥取github的 .mardown-body 
-- 可用变量
-<https://github.com/mojombo/jekyll/wiki/Template-Data>
-- Liquid for Designers
-<https://github.com/Shopify/liquid/wiki/Liquid-for-Designers>
+- markdown css: 直接自剥取github的 .mardown-body 
+- 可用变量 <https://github.com/mojombo/jekyll/wiki/Template-Data>
+- Liquid for Designers <https://github.com/Shopify/liquid/wiki/Liquid-for-Designers>
 
 -------
 
