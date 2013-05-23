@@ -14,13 +14,12 @@ tags: [opencv, cmake, mingw]
     cmake -G"MSYS Makefiles" ../.. 
     make
 
-
-然后使用下面的CMakeLists建立工程即可, 同样记得在cmake时加上标志 `-G"MSYS Makefiles"` .
+然后参考下面的CMakeLists建立工程即可, 同样记得在cmake时加上标志 `-G"MSYS Makefiles"` .
 <script src="https://gist.github.com/4186692.js?file=CMakeLists.txt"></script>
 
 -----
 
-PS. 编译opencv的vc11版本
+PS. 编译opencv的vc11版本  
 require: 安装了vs2012
 
 1. 安装cmake http://www.cmake.org/

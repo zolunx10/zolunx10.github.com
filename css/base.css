@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 /**
  * https://github.com/kissyteam/kissy/blob/master/src/cssreset/cssreset-pkg.css */
@@ -311,7 +311,7 @@ p, pre {
   margin-bottom:0.4em;
 }
 .title {
-  font-family:"Microsoft YaHei", Helmet, Freesans, sans-serif;
+  font-family: "微软雅黑", "Microsoft YaHei", Helmet, Freesans, sans-serif;
 }
 .title-en {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif !important;
